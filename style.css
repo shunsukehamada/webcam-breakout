@@ -32,3 +32,12 @@
     transform: rotate(180deg);
     margin: 0 20px;
 }
+
+.train-box{
+    display: flex;
+    justify-content: center;
+}
+
+.train{
+    font-size: 1.5em;
+}
