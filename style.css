@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
 }
-canvas {
+#game {
     background: #eee;
     display: block;
     margin: 0 auto;
@@ -11,12 +11,24 @@ canvas {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 #wevcam {
     display: block;
     margin: 0 auto;
 }
-#wevcam::after{
-    content: "aaaaaa";
+
+.right-button {
+    border: none;
+    outline: none;
+    background: transparent;
+    display: block;
+    margin: 0 20px;
+}
+.left-button {
+    border: none;
+    outline: none;
+    background: transparent;
+    transform: rotate(180deg);
+    margin: 0 20px;
 }
