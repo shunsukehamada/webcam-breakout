@@ -8,11 +8,21 @@
     <body>
         <canvas id="game" width="480" height="320"></canvas>
         <div class="webcam-box">
-            <canvas id="left-example" class="thumbnail"></canvas>
-            <button class="left-button arrow-button" data-direction="left"><img src="right-button.svg" width="50px" /></button>
+            <div class="left-example">
+                <canvas id="left-thumbnail" class="thumbnail" width="224" height="224"></canvas>
+                <div>サンプル数: <span class="num-left-sample"></span></div>
+            </div>
+            <button class="left-button arrow-button" data-direction="left">
+                <img src="right-button.svg" width="50px" />
+            </button>
             <video id="webcam" width="224" height="224"></video>
-            <button class="right-button arrow-button" data-direction="right"><img src="right-button.svg" width="50px" /></button>
-            <canvas id="right-example" class="thumbnail"></canvas>
+            <button class="right-button arrow-button" data-direction="right">
+                <img src="right-button.svg" width="50px" />
+            </button>
+            <div class="right-example">
+                <canvas id="right-thumbnail" class="thumbnail" width="224" height="224"></canvas>
+                <div>サンプル数: <span class="num-right-sample"></span></div>
+            </div>
             <!-- <button class="screen-shot">スクリーンショット</button> -->
         </div>
         <!-- <canvas id="screen-shot"></canvas> -->
