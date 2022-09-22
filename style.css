@@ -17,3 +17,6 @@ canvas {
     display: block;
     margin: 0 auto;
 }
+#wevcam::after{
+    content: "aaaaaa";
+}
