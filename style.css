@@ -36,12 +36,15 @@
 .train-box {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .train {
     font-size: 1.5em;
 }
-
+.train-info {
+    visibility: hidden;
+}
 .predict-box {
     display: flex;
     justify-content: center;
