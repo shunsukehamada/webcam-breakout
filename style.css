@@ -8,9 +8,13 @@
     margin: 0 auto;
 }
 .webcam-box {
+    margin-top: 20px;
     display: flex;
+    vertical-align: top;
     justify-content: center;
-    align-items: center;
+    /* box-sizing: border-box; */
+    /* align-items: center; */
+    /* height: 300px; */
     /* flex-direction: column; */
 }
 #wevcam {
@@ -31,6 +35,10 @@
     background: transparent;
     transform: rotate(180deg);
     margin: 0 20px;
+}
+
+.selected {
+    outline: 2px solid red;
 }
 
 .train-box {
