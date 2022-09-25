@@ -17,9 +17,9 @@
     /* height: 300px; */
     /* flex-direction: column; */
 }
-#wevcam {
+#webcam {
     display: block;
-    margin: 0 auto;
+    margin-top: 24px;
 }
 
 .right-button {
@@ -60,4 +60,9 @@
 
 .predict {
     font-size: 1.5em;
+}
+
+.left-prob,
+.right-prob {
+    height: 24px;
 }

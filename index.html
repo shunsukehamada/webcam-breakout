@@ -9,6 +9,7 @@
         <canvas id="game" width="480" height="320"></canvas>
         <div class="webcam-box">
             <div class="left-example">
+                <div class="left-prob"></div>
                 <canvas id="left-thumbnail" class="thumbnail" width="224" height="224"></canvas>
                 <div>サンプル数: <span class="num-left-sample"></span></div>
             </div>
@@ -20,12 +21,64 @@
                 <img src="right-button.svg" width="50px" />
             </button>
             <div class="right-example">
+                <div class="right-prob"></div>
                 <canvas id="right-thumbnail" class="thumbnail" width="224" height="224"></canvas>
                 <div>サンプル数: <span class="num-right-sample"></span></div>
             </div>
             <!-- <button class="screen-shot">スクリーンショット</button> -->
         </div>
         <div class="train-box">
+            <div class="hyper-params">
+                <!-- Learning rate -->
+                <div class="dropdown">
+                    <label>Learning rate</label>
+                    <div class="select">
+                        <select id="learningRate">
+                            <option value="0.00001">0.00001</option>
+                            <option selected value="0.0001">0.0001</option>
+                            <option value="0.01">0.001</option>
+                            <option value="0.03">0.003</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Batch size -->
+                <div class="dropdown">
+                    <label>Batch size</label>
+                    <div class="select">
+                        <select id="batchSizeFraction">
+                            <option value="0.05">0.05</option>
+                            <option value="0.1">0.1</option>
+                            <option selected value="0.4">0.4</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Epochs -->
+                <div class="dropdown">
+                    <label>Epochs</label>
+                    <div class="select">
+                        <select id="epochs">
+                            <option value="10">10</option>
+                            <option selected value="20">20</option>
+                            <option value="40">40</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Hidden units -->
+                <div class="dropdown">
+                    <label>Hidden units</label>
+                    <div class="select">
+                        <select id="dense-units">
+                            <option value="10">10</option>
+                            <option selected value="100">100</option>
+                            <option value="200">200</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
             <button class="train" disabled>学習</button>
             <div class="train-info">
                 エポック数: <span class="epoch"></span> loss: <span class="loss"></span>
