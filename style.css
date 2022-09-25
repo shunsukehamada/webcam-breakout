@@ -7,15 +7,15 @@
     display: block;
     margin: 0 auto;
 }
+.controller-box {
+    display: flex;
+    justify-content: space-evenly;
+}
 .webcam-box {
     margin-top: 20px;
     display: flex;
     vertical-align: top;
     justify-content: center;
-    /* box-sizing: border-box; */
-    /* align-items: center; */
-    /* height: 300px; */
-    /* flex-direction: column; */
 }
 #webcam {
     display: block;
@@ -43,12 +43,17 @@
 
 .train-box {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .train {
     font-size: 1.5em;
+}
+.loss {
+    display: inline-block;
+    width: 230px;
 }
 .train-info {
     visibility: hidden;
